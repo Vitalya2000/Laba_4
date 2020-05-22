@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.laba_41">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MyFragmentActivity" android:label="@string/app_name" android:theme="@android:style/Theme.Translucent"
+            android:excludeFromRecents="true"
+            android:configChanges="orientation|screenSize"/>
+        <receiver    android:name=".MyBroadcast"
+            />
+        <receiver
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget">
+            </meta-data>
+        </receiver>
+    </application>
+</manifest>

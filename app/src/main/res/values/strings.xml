@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">laba_4.1</string>
+    <string name="widget_name">Dni do nashey daty</string>
+    <string name="widget_date">Nasha data: </string>
+    <string name="widget_text">Do nashey daty ostalos dney</string>
+    <string name="date_default">data ne vybrana</string>
+</resources>
